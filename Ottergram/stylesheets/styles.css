@@ -5,7 +5,7 @@
         url("fonts/Sweety\ Rasty.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
-   
+
 }
 
 @font-face {
@@ -15,10 +15,11 @@
         url("fonts/lakeshore-regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-   
+
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -43,7 +44,7 @@ a {
 
     text-align: center;
     text-transform: uppercase;
-    font-family:"lakeshore-regular";
+    font-family: "lakeshore-regular";
     font-size: 1000%;
 }
 
@@ -123,4 +124,42 @@ a {
         flex-direction: row;
         overflow: hidden;
     }
+
+    .thumbnail-list {
+        flex-direction: column;
+        order: 0;
+        margin-left: 20px;
+    }
+
+    .thumbnail-item {
+        max-width: 260px;
+    }
+
+    .thumbnail-item + .thumbnail-item {
+        margin-top: 20px;
+    } 
+
 }
+
+/* @media all and (orientation: landscape) {
+    .main-content {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .thumbnail-list {
+        flex-direction: column;
+        order: 0;
+        margin-left: 20px;
+    }
+
+    .thumbnail-item {
+        max-width: 260px;
+    }
+
+    .thumbnail-item+.thumbnail-item {
+        margin-top: 20px;
+    }
+} 
+*/
+
