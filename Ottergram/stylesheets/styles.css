@@ -54,6 +54,22 @@ a {
     flex-direction: column;
 }
 
+.main-footer {
+    flex: 0 1 auto;
+    background: #f9f9f9;
+}
+
+.footer-text {
+    background: #f9f9f9;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "lakeshore-regular";
+    font-size: 500%;
+
+    margin-top: 0px;
+}
+
 
 
 .thumbnail-item {
@@ -163,3 +179,24 @@ a {
 } 
 */
 
+.HolyGrail, .HolyGrail-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.HolyGrail-nav {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .HolyGrail-body {
+        flex-direction: row;
+        flex: 1;
+    }
+    .HolyGrail-content {
+        flex: 1;
+    }
+    .HolyGrail-nav, .HolyGrail-ads {
+        flex: 0 0 12em;
+    }
+}
