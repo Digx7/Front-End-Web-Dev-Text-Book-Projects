@@ -1,8 +1,8 @@
 @font-face {
-    font-family: "AIRSTREA";
-    src: url("fonts/AIRSTREA.TTF") format("woff"),
-        url("fonts/AIRSTREA.TTF") format("opentype"),
-        url("fonts/AIRSTREA.TTF") format("truetype");
+    font-family: "Sweet Rasty";
+    src: url("fonts/Sweety\ Rasty.otf") format("woff"),
+        url("fonts/Sweety\ Rasty.otf") format("opentype"),
+        url("fonts/Sweety\ Rasty.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
    
@@ -108,8 +108,19 @@ a {
 }
 
 .detail-image-title {
-    font-family: "AIRSTREA";
+    position: absolute;
+    bottom: -16px;
+    left: 4px;
+
+    font-family: "Sweet Rasty";
     color: white;
     text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
     font-size: 40px;
+}
+
+@media all and (min-width: 768px){
+    .main-content {
+        flex-direction: row;
+        overflow: hidden;
+    }
 }
